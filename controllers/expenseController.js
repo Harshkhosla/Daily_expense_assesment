@@ -1,6 +1,7 @@
 const Expense = require('../models/expense');
 const User = require('../models/user');
 
+// Add an expense
 exports.addExpense = async (req, res) => {
   const { title, totalAmount, participants, createdBy } = req.body;
   try {
